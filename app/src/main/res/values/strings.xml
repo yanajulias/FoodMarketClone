@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FoodMarketClone</string>
+    <string name="string_title_bar">Title</string>
+    <string name="string_subtitle_bar">Subtitle</string>
+    <string name="string_title_register">Daftar</string>
+    <string name="string_subtitle_register">Buat akun dulu baru cekot makanan.</string>
+
 </resources>

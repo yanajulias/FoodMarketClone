@@ -1,4 +1,4 @@
-package aej.android.enthusiast.foodmarketclone.ui.theme
+package aej.android.enthusiast.foodmarketclone.theme
 
 import android.app.Activity
 import android.os.Build
