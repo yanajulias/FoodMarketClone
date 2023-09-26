@@ -25,8 +25,7 @@ import androidx.compose.ui.unit.dp
 fun TopLoginBar(
     modifier: Modifier = Modifier,
     title: String,
-        subtitle: String? = null,
-    showNavigateBack: Boolean = false,
+    subtitle: String
 ) {
     Column {
         Row(
@@ -34,17 +33,12 @@ fun TopLoginBar(
                 .background(colorResource(id = R.color.white)),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Spacer(
-                modifier = Modifier.then(
-                    if (showNavigateBack) {
-                        Modifier.width(0.dp)
-                    } else {
-                        Modifier.width(6.dp)
-                    }
-                )
-            )
+
+            Spacer(modifier = Modifier.width(8.dp))
+
             Column(
-                modifier = Modifier.padding(vertical = 16.dp),
+                modifier = Modifier.padding(vertical = 16.dp)
+                    .padding(start = 6.dp),
                 verticalArrangement = Arrangement.Center
             ) {
                 Text(
@@ -54,14 +48,12 @@ fun TopLoginBar(
                     fontWeight = FontWeight.Bold,
                     color = colorResource(id = R.color.black)
                 )
-                subtitle?.let {
-                    Text(
-                        text = subtitle,
-                        modifier = Modifier.fillMaxWidth(),
-                        style = MaterialTheme.typography.titleSmall,
-                        color = colorResource(id = R.color.gray),
-                    )
-                }
+                Text(
+                    text = subtitle,
+                    modifier = Modifier.fillMaxWidth(),
+                    style = MaterialTheme.typography.titleSmall,
+                    color = colorResource(id = R.color.gray),
+                )
             }
         }
 
@@ -73,8 +65,8 @@ fun TopLoginBar(
 private fun DefaultPreview() {
     FoodMarketCloneTheme {
         TopLoginBar(
-            title = "Title",
-            showNavigateBack = true
+            title = "Login",
+            subtitle = "Kalo udah punya akun langsung masuk aja gan."
         )
     }
 }
