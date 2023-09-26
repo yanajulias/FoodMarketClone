@@ -3,6 +3,25 @@
     <string name="string_title_bar">Title</string>
     <string name="string_subtitle_bar">Subtitle</string>
     <string name="string_title_register">Daftar</string>
+    <string name="string_title_login">Login</string>
+    <string name="string_title_address">Alamat</string>
     <string name="string_subtitle_register">Buat akun dulu baru cekot makanan.</string>
-
+    <string name="string_subtitle_login">Kalo udah punya akun langsung masuk aja gan.</string>
+    <string name="string_subtitle_address">Lengkapin alamat kamu buat lanjut daftar akunnya.</string>
+    <string name="string_name_label">Nama</string>
+    <string name="string_email_label">Email</string>
+    <string name="string_password_label">Kata Sandi</string>
+    <string name="string_phone_number_label">Nomor HP</string>
+    <string name="string_address_label">Alamat</string>
+    <string name="string_house_number_label">Nomor Rumah</string>
+    <string name="string_kota_label">Kota</string>
+    <string name="string_name_placeholder">Huruf alfabet, tanpa emoji/simbol</string>
+    <string name="string_email_placeholder">Cth: name@email.com</string>
+    <string name="string_password_placeholder">Berupa huruf/angka</string>
+    <string name="string_phone_number_placeholder">08xxxxxxxxx</string>
+    <string name="string_address_placeholder">Alamat Kamu</string>
+    <string name="string_house_number_placeholder">Nomor Rumah Kamu</string>
+    <string name="string_city_placeholder">Pilih Kota</string>
+    <string name="string_next">Lanjut</string>
+    <string name="string_register_now">Daftar Sekarang</string>
 </resources>
