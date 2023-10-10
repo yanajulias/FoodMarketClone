@@ -1,4 +1,4 @@
-package aej.android.enthusiast.foodmarketclone.theme
+package aej.android.enthusiast.foodmarketclone.features.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -14,6 +14,13 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
+import kompas.technical.test.features.ui.theme.Pink40
+import kompas.technical.test.features.ui.theme.Pink80
+import kompas.technical.test.features.ui.theme.Purple40
+import kompas.technical.test.features.ui.theme.Purple80
+import kompas.technical.test.features.ui.theme.PurpleGrey40
+import kompas.technical.test.features.ui.theme.PurpleGrey80
+import kompas.technical.test.features.ui.theme.Typography
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
