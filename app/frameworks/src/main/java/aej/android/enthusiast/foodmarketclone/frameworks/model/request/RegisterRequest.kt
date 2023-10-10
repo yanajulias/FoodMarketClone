@@ -1,4 +1,4 @@
-package aej.android.enthusiast.foodmarketclone.frameworks.http.model.request
+package aej.android.enthusiast.foodmarketclone.frameworks.model.request
 
 import com.google.gson.annotations.SerializedName
 

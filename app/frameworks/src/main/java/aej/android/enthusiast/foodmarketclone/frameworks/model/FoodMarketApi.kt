@@ -1,9 +1,9 @@
-package aej.android.enthusiast.foodmarketclone.frameworks.http.model
+package aej.android.enthusiast.foodmarketclone.frameworks.model
 
 import aej.android.enthusiast.foodmarketclone.common.BaseResponse
-import aej.android.enthusiast.foodmarketclone.frameworks.http.model.request.LoginRequest
-import aej.android.enthusiast.foodmarketclone.frameworks.http.model.request.RegisterRequest
-import aej.android.enthusiast.foodmarketclone.frameworks.http.model.response.AuthDto
+import aej.android.enthusiast.foodmarketclone.frameworks.model.request.LoginRequest
+import aej.android.enthusiast.foodmarketclone.frameworks.model.request.RegisterRequest
+import aej.android.enthusiast.foodmarketclone.frameworks.model.response.AuthDto
 import retrofit2.http.Body
 import retrofit2.http.POST
 

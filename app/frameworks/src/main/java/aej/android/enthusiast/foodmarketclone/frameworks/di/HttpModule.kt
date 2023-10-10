@@ -1,6 +1,6 @@
-package aej.android.enthusiast.foodmarketclone.frameworks.http.di
+package aej.android.enthusiast.foodmarketclone.frameworks.di
 
-import aej.android.enthusiast.foodmarketclone.frameworks.http.model.FoodMarketApi
+import aej.android.enthusiast.foodmarketclone.frameworks.model.FoodMarketApi
 import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides
@@ -47,15 +47,15 @@ object HttpModule {
             .build()
     }
 
-    @Provides
-    fun provideLoggingInterceptor(): HttpLoggingInterceptor {
-        val loggingInterceptor = HttpLoggingInterceptor()
-        loggingInterceptor.level = if (BuildConfig.DEBUG) {
-            HttpLoggingInterceptor.Level.BODY
-        } else {
-            HttpLoggingInterceptor.Level.NONE
-        }
-        return loggingInterceptor
-    }
+//    @Provides
+//    fun provideLoggingInterceptor(): HttpLoggingInterceptor {
+//        val loggingInterceptor = HttpLoggingInterceptor()
+//        loggingInterceptor.level = if (BuildConfig.DEBUG) {
+//            HttpLoggingInterceptor.Level.BODY
+//        } else {
+//            HttpLoggingInterceptor.Level.NONE
+//        }
+//        return loggingInterceptor
+//    }
 
 }
