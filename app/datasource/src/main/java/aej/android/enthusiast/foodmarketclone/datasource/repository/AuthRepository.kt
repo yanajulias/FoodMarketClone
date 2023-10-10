@@ -2,7 +2,8 @@ package aej.android.enthusiast.foodmarketclone.datasource.repository
 
 import aej.android.enthusiast.foodmarketclone.common.BaseResponse
 import aej.android.enthusiast.foodmarketclone.common.NetworkResult
-import aej.android.enthusiast.foodmarketclone.frameworks.http.model.response.AuthDto
+import aej.android.enthusiast.foodmarketclone.frameworks.model.response.AuthDto
+
 import kotlinx.coroutines.flow.Flow
 
 interface AuthRepository {

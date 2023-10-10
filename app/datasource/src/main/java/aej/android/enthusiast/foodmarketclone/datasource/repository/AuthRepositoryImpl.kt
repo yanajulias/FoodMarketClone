@@ -3,10 +3,10 @@ package aej.android.enthusiast.foodmarketclone.datasource.repository
 import aej.android.enthusiast.foodmarketclone.common.BaseResponse
 import aej.android.enthusiast.foodmarketclone.common.NetworkResult
 import aej.android.enthusiast.foodmarketclone.common.safeApiCall
-import aej.android.enthusiast.foodmarketclone.frameworks.http.model.FoodMarketApi
-import aej.android.enthusiast.foodmarketclone.frameworks.http.model.request.LoginRequest
-import aej.android.enthusiast.foodmarketclone.frameworks.http.model.request.RegisterRequest
-import aej.android.enthusiast.foodmarketclone.frameworks.http.model.response.AuthDto
+import aej.android.enthusiast.foodmarketclone.frameworks.model.FoodMarketApi
+import aej.android.enthusiast.foodmarketclone.frameworks.model.request.LoginRequest
+import aej.android.enthusiast.foodmarketclone.frameworks.model.request.RegisterRequest
+import aej.android.enthusiast.foodmarketclone.frameworks.model.response.AuthDto
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
@@ -24,7 +24,11 @@ class AuthRepositoryImpl @Inject constructor(
             password = password
         )
 
-        emit(safeApiCall { foodMarketApi.login(loginRequest) })
+        emit(safeApiCall {
+            foodMarketApi.login(
+                loginRequest
+            )
+        })
     }
 
     override suspend fun register(
@@ -46,7 +50,11 @@ class AuthRepositoryImpl @Inject constructor(
             houseNumber = houseNumber,
             phoneNumber = phoneNumber
         )
-        emit(safeApiCall { foodMarketApi.register(registerRequest) })
+        emit(safeApiCall {
+            foodMarketApi.register(
+                registerRequest
+            )
+        })
     }
 
 }
