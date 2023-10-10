@@ -16,3 +16,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "FoodMarketClone"
 include(":app")
+include(":app:domain")
+include(":app:common")
+include(":app:datasource")
+include(":app:frameworks")
+include(":app:features")
