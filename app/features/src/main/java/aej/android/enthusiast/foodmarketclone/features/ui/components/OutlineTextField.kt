@@ -1,6 +1,6 @@
-package aej.android.enthusiast.foodmarketclone.ui.component
+package aej.android.enthusiast.foodmarketclone.features.ui.components
 
-import aej.android.enthusiast.foodmarketclone.theme.FoodMarketCloneTheme
+import aej.android.enthusiast.foodmarketclone.features.ui.theme.FoodMarketCloneTheme
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Divider
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -53,7 +53,7 @@ fun OutlineTextField(
                     }
                     textField()
                 }
-                HorizontalDivider(thickness = 2.dp, color = Color.Gray)
+                Divider(thickness = 2.dp, color = Color.Gray)
             }
         },
         keyboardActions = KeyboardActions(

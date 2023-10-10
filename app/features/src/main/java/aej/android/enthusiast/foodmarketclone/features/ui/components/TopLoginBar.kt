@@ -1,7 +1,7 @@
-package aej.android.enthusiast.foodmarketclone.ui.component
+package aej.android.enthusiast.foodmarketclone.features.ui.components
 
-import aej.android.enthusiast.foodmarketclone.R
-import aej.android.enthusiast.foodmarketclone.theme.FoodMarketCloneTheme
+import aej.android.enthusiast.foodmarketclone.features.R
+import aej.android.enthusiast.foodmarketclone.features.ui.theme.FoodMarketCloneTheme
 import android.content.res.Configuration
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -63,7 +63,7 @@ fun TopLoginBar(
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_YES, showBackground = true)
 @Composable
 private fun DefaultPreview() {
-    FoodMarketCloneTheme {
+   FoodMarketCloneTheme {
         TopLoginBar(
             title = "Login",
             subtitle = "Kalo udah punya akun langsung masuk aja gan."

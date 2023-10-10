@@ -1,6 +1,6 @@
-package aej.android.enthusiast.foodmarketclone.ui.component
+package aej.android.enthusiast.foodmarketclone.features.ui.components
 
-import aej.android.enthusiast.foodmarketclone.theme.FoodMarketCloneTheme
+import aej.android.enthusiast.foodmarketclone.features.ui.theme.FoodMarketCloneTheme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Text
@@ -10,7 +10,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
-import aej.android.enthusiast.foodmarketclone.ui.component.OutlineTextField as OutlineTextField
 
 @Composable
 fun InputTextField(

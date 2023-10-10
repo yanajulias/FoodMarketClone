@@ -1,7 +1,7 @@
-package aej.android.enthusiast.foodmarketclone.ui.component
+package aej.android.enthusiast.foodmarketclone.features.ui.components
 
-import aej.android.enthusiast.foodmarketclone.R
-import aej.android.enthusiast.foodmarketclone.theme.FoodMarketCloneTheme
+import aej.android.enthusiast.foodmarketclone.features.R
+import aej.android.enthusiast.foodmarketclone.features.ui.theme.FoodMarketCloneTheme
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -30,7 +30,7 @@ fun CustomButton(
 @Composable
 @Preview(showBackground = true)
 private fun ButtonComponentPreview() {
-    FoodMarketCloneTheme {
+   FoodMarketCloneTheme {
         CustomButton(
             text = "Lanjut",
             onClick = {}

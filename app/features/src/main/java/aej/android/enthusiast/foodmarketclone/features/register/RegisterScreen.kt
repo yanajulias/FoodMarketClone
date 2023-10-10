@@ -1,10 +1,10 @@
 package aej.android.enthusiast.foodmarketclone.features.register
 
-import aej.android.enthusiast.foodmarketclone.R
-import aej.android.enthusiast.foodmarketclone.theme.FoodMarketCloneTheme
-import aej.android.enthusiast.foodmarketclone.ui.component.CustomButton
-import aej.android.enthusiast.foodmarketclone.ui.component.InputTextField
-import aej.android.enthusiast.foodmarketclone.ui.component.TopRegisterBar
+import aej.android.enthusiast.foodmarketclone.features.R
+import aej.android.enthusiast.foodmarketclone.features.ui.components.CustomButton
+import aej.android.enthusiast.foodmarketclone.features.ui.components.InputTextField
+import aej.android.enthusiast.foodmarketclone.features.ui.components.TopRegisterBar
+import aej.android.enthusiast.foodmarketclone.features.ui.theme.FoodMarketCloneTheme
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -110,7 +110,7 @@ fun RegisterScreen(
 @Preview(showBackground = true)
 @Composable
 private fun RegisterPreview() {
-    FoodMarketCloneTheme {
+   FoodMarketCloneTheme {
         RegisterScreen(popBackStack = {})
     }
 }

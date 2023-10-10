@@ -1,4 +1,4 @@
-package aej.android.enthusiast.foodmarketclone.theme
+package kompas.technical.test.features.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

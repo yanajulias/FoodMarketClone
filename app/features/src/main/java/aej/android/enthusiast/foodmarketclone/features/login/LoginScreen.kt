@@ -1,10 +1,10 @@
 package aej.android.enthusiast.foodmarketclone.features.login
 
-import aej.android.enthusiast.foodmarketclone.R
-import aej.android.enthusiast.foodmarketclone.theme.FoodMarketCloneTheme
-import aej.android.enthusiast.foodmarketclone.ui.component.CustomButton
-import aej.android.enthusiast.foodmarketclone.ui.component.InputTextField
-import aej.android.enthusiast.foodmarketclone.ui.component.TopLoginBar
+import aej.android.enthusiast.foodmarketclone.features.R
+import aej.android.enthusiast.foodmarketclone.features.ui.components.CustomButton
+import aej.android.enthusiast.foodmarketclone.features.ui.components.InputTextField
+import aej.android.enthusiast.foodmarketclone.features.ui.components.TopLoginBar
+import aej.android.enthusiast.foodmarketclone.features.ui.theme.FoodMarketCloneTheme
 import android.content.res.Configuration
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -36,7 +36,7 @@ fun LoginScreen(){
             .statusBarsPadding(),
         containerColor = colorResource(id = R.color.light_gray),
         topBar = {
-            TopLoginBar(
+           TopLoginBar(
                 title = stringResource(id = R.string.string_title_login),
                 subtitle = stringResource(id = R.string.string_subtitle_login),
             )
@@ -60,7 +60,6 @@ fun LoginScreen(){
                         modifier = Modifier
                             .fillMaxSize()
                             .background(colorResource(id = R.color.white))
-                            .verticalScroll(rememberScrollState())
                             .padding(innerPadding),
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
@@ -80,7 +79,7 @@ fun LoginScreen(){
                         }
                         Spacer(modifier = Modifier.height(24.dp))
                         Column(modifier = Modifier.padding(horizontal = 16.dp)) {
-                            InputTextField(
+                           InputTextField(
                                 label = stringResource(id = R.string.string_password_label),
                                 placeholder = stringResource(id = R.string.string_password_placeholder),
                                 keyboardOptions = KeyboardOptions.Default.copy(
