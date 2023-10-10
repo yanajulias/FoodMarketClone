@@ -1,7 +1,7 @@
 package aej.android.enthusiast.foodmarketclone.domain.mapper
 
 import aej.android.enthusiast.foodmarketclone.domain.model.User
-import aej.android.enthusiast.foodmarketclone.frameworks.http.model.response.AuthDto
+import aej.android.enthusiast.foodmarketclone.frameworks.model.response.AuthDto
 
 fun AuthDto.UserDto?.toUser(): User {
     return User(
